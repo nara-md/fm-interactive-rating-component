@@ -17,8 +17,13 @@ ratings.forEach(rating => {
 submitButton.addEventListener('click', () => {
   if (selectedRating > 0) {
     ratingContent.innerHTML = `
+      <div class="thank-you-content">
+      <img src="assets/images/illustration-thank-you.svg" alt="Thank You Illustration" class="thank-you-image">
+      <span class="selected-rating">You selected ${selectedRating} out of 5</span>
       <h2>Thank you!</h2>
-      <p>You selected ${selectedRating} out of 5</p>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  </div>
     `;
   }
 })
