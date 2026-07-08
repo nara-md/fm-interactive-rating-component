@@ -139,9 +139,9 @@ button#submit:hover {
 .selected-rating {
   background-color: var(--grey-24);
   color: var(--orange-500);
-  padding: .1rem .6rem .1rem .6rem;
   border-radius: var(--border-radius);
   border: none;
+  padding: .5rem 1rem;
   margin-bottom: var(--mg-bottom);
 }
 
