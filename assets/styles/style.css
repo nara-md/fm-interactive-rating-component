@@ -29,7 +29,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   padding: 1rem;
 }
 
@@ -116,6 +116,12 @@ button#submit {
   font-weight: 700;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  button#submit {
+    transition: none;
+  }
+}
+
 button#submit:hover {
   background-color: var(--white);
 }
@@ -129,11 +135,6 @@ button#submit:hover {
 
 .thank-you-content img {
   margin-bottom: var(--mg-bottom);
-}
-
-.thank-you-content h1 {
-  font-size: 1.25rem !important;
-  margin-bottom: unset;
 }
 
 .selected-rating {
@@ -152,7 +153,7 @@ button#submit:hover {
   right: 0;
   text-align: center;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .attribution a {
@@ -164,7 +165,7 @@ button#submit:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .rating-card {
     padding: 1rem;
   }

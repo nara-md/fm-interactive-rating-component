@@ -8,9 +8,8 @@ let selectedRating = 0;
 
 ratings.forEach(rating => {
   rating.addEventListener('click', (event) => {
-    selectedRating = Number(rating.dataset.value);
-
-    console.log(selectedRating);
+    selectedRating = Number(event.currentTarget.dataset.value);
+    // console.log(`Selected rating: ${selectedRating}`);
   });
 });
 
